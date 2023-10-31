@@ -7,12 +7,16 @@ div {
     display: block;
 }
 
+h1 {
+    font-size: 12px;
+}
+
 /* General CSS for all 'windows' on my webpage */
 .window {
     height: 350px;
     width: 400px;
     background: #eaf3f8;
-    margin: 25px auto;
+    margin: 50px auto;
     border-radius: 1.5%;
     padding: 1px 10px;
 }

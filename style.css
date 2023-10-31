@@ -25,6 +25,7 @@ ul {
 
 .status {
     /*should be greyed out slightly compared to other text*/
+    color: #d3d3d3;
 }
 
 /* General CSS for all 'windows' on my webpage */

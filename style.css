@@ -21,7 +21,7 @@ div {
     /*should be greyed out slightly compared to other text*/
 }
 
-footer {
+footer p {
     color: #A9A9A9;
     text-align: center;
 }

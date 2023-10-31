@@ -14,7 +14,14 @@ div {
 .window {
     height: 150px;
     width: 150px;
-    background: grey;
+    background: #eaf3f8;
+
+}
+
+.nav {
+    height: 300px;
+    width: 200px;
+    background: #eaf3f8;
 }
 
 .status {

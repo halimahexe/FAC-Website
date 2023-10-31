@@ -6,7 +6,11 @@ h1 {
     text-align: center;
 }
 
-
+.window {
+    height: 150px;
+    width: 150px;
+    background: grey;
+}
 
 .status {
     /*should be greyed out slightly compared to other text*/

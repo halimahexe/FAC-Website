@@ -11,6 +11,22 @@ h1 {
     font-size: 12px;
 }
 
+/* Navigation section */
+
+.nav {
+    height: 300px;
+    width: 200px;
+    background: #eaf3f8;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.status {
+    /*should be greyed out slightly compared to other text*/
+}
+
 /* General CSS for all 'windows' on my webpage */
 .window {
     height: 350px;
@@ -63,16 +79,6 @@ h1 {
 .message {
     margin-top: -0.45rem;
     margin-left: 0.4rem;
-}
-
-.nav {
-    height: 300px;
-    width: 200px;
-    background: #eaf3f8;
-}
-
-.status {
-    /*should be greyed out slightly compared to other text*/
 }
 
 footer p {

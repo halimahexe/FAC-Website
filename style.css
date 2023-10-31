@@ -19,6 +19,7 @@ h1 {
     margin: 50px auto;
     border-radius: 1.5%;
     padding: 1px 10px;
+    border: 1px solid #d3d3d3;
 }
 
 .menu-bar {

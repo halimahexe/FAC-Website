@@ -1,15 +1,18 @@
 body {
-
+    font-family: Open 'Segoe UI', Tahoma, sans-serif;
+    
 }
 
 h1 {
     text-align: center;
 }
 
-footer {
-    color: ;
-}
+
 
 .status {
     /*should be greyed out slightly compared to other text*/
+}
+
+footer {
+    color: ;
 }

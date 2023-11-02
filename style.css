@@ -49,8 +49,8 @@ ul {
 /* General CSS for all 'windows' on my webpage */
 .window {
     position: relative;
-    height: 350px;
-    max-width: 400px;
+    height: 400px;
+    max-width: 500px;
     background: linear-gradient(180deg, rgb(46, 0, 63) 0%, rgba(203, 180, 200) 15%, rgba(203,180,212) 25%);
     border-radius: 2%;
     padding: 1px 10px;
@@ -61,6 +61,7 @@ ul {
 .menu-bar {
     height: 40px;
     width: 420px;
+    max-width: 820px;
     margin-left: -10px;
     border-bottom: 1px solid #d3d3d3;
 }

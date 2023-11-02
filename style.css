@@ -13,11 +13,12 @@ h1 {
 
 /* Navigation section */
 
-.nav {
+.window.nav {
     height: 300px;
-    width: 200px;
-    background: #eaf3f8;
+    width: 150px;
     position: fixed;
+    margin-top: 20%;
+    margin-left: 100px;
 }
 
 ul {
@@ -27,14 +28,14 @@ ul {
 
 .status {
     /*should be greyed out slightly compared to other text*/
-    color: #d3d3d3;
+    color: grey;
 }
 
 /* General CSS for all 'windows' on my webpage */
 .window {
     height: 350px;
-    width: 400px;
-    background: #eaf3f8;
+    max-width: 800px;
+    background: linear-gradient(90deg, rgba(32,0,44,1) 0%, rgba(203,180,212,1) 20%);
     border-radius: 1.5%;
     padding: 1px 10px;
     border: 1px solid #d3d3d3;
@@ -83,6 +84,8 @@ ul {
     margin-top: -0.45rem;
     margin-left: 0.4rem;
 }
+
+/* Footer CSS */
 
 footer p {
     color: #A9A9A9;

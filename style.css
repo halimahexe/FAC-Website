@@ -17,6 +17,7 @@ h1 {
     height: 300px;
     width: 200px;
     background: #eaf3f8;
+    position: fixed;
 }
 
 ul {
@@ -55,7 +56,7 @@ ul {
     font-weight: bold;
 }
 
-.desc {
+.speaker, .desc {
     color: grey;
 }
 

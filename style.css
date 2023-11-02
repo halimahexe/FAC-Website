@@ -30,11 +30,14 @@ ul {
 }
 
 /* General CSS for all 'windows' on my webpage */
+section {
+    margin: 25px auto;
+}
+
 .window {
     height: 350px;
     width: 400px;
     background: #eaf3f8;
-    margin: 25px auto;
     border-radius: 1.5%;
     padding: 1px 10px;
     border: 1px solid #d3d3d3;

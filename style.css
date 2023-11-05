@@ -1,27 +1,37 @@
+/* Reset */
+
+* {
+    margin: none;
+    padding: none;
+}
+
 body {
     font-family: Tahoma, 'Segoe UI', Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 div {
     display: block;
 }
 
-h1 {
-    font-size: 12px;
-}
-
 /* Navigation section */
 
+h1 {
+    font-size: 0.75rem;
+}
+
 .profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin-top: 20px;
     height: 75px;
     width: 200px;
     background:rgb(46, 0, 63, 0.2);
+    font-size: 0.75rem;
 }
 
 .av {
-    width: 40px;
+    width: 45px;
     aspect-ratio: 1;
     margin-top: 10px;
     margin-left: 7.5px;
@@ -41,6 +51,10 @@ ul {
     margin-left: -35px;
 }
 
+.nav-title {
+    font-weight: bold;
+}
+
 .status {
     /*should be greyed out slightly compared to other text*/
     color: grey;
@@ -55,14 +69,14 @@ ul {
     border-radius: 2%;
     padding: 1px 10px;
     border: 1px solid #d3d3d3;
-    margin: 25px auto;
+    margin-inline: auto;
 }
 
 .menu-bar {
     height: 40px;
     width: 420px;
     max-width: 820px;
-    margin-left: -10px;
+    padding-left: -10px;
     border-bottom: 1px solid #d3d3d3;
 }
 

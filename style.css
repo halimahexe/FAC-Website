@@ -1,9 +1,11 @@
 /* Reset */
 
 * {
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
 }
+
+/* General styling  */
 
 body {
     font-family: Tahoma, 'Segoe UI', Verdana, sans-serif;
@@ -55,11 +57,6 @@ ul {
     font-weight: bold;
 }
 
-.status {
-    /*should be greyed out slightly compared to other text*/
-    color: grey;
-}
-
 /* General CSS for all 'windows' on my webpage */
 .window {
     position: relative;
@@ -80,6 +77,12 @@ ul {
     border-bottom: 1px solid #d3d3d3;
 }
 
+/* menu buttons */
+.mb {
+    aspect-ratio: 1;
+    width: 24px;
+}
+
 .title, .desc {
     margin: 2px 10px;
 }
@@ -89,7 +92,7 @@ ul {
     color: rgba(203,180,212,1);
 }
 
-.speaker, .desc {
+.status, .speaker, .desc {
     color: grey;
 }
 

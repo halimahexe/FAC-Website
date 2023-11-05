@@ -50,6 +50,7 @@ a {
 
 .menu-buttons {
     padding-right: 5px;
+    flex-wrap: none;
 }
 
 .mb {

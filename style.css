@@ -64,7 +64,7 @@ ul {
 .window {
     position: relative;
     height: 400px;
-    max-width: 500px;
+    width: 400px;
     background: linear-gradient(180deg, rgb(46, 0, 63) 0%, rgba(203, 180, 200) 15%, rgba(203,180,212) 25%);
     border-radius: 2%;
     padding: 1px 10px;

@@ -71,16 +71,19 @@ ul {
 
 .menu-bar {
     height: 40px;
-    width: 420px;
+    width: 400px;
     max-width: 820px;
     padding-left: -10px;
     border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* menu buttons */
 .mb {
     aspect-ratio: 1;
     width: 24px;
+    margin-inline: -6.5px;
 }
 
 .title, .desc {

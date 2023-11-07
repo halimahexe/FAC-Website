@@ -3,9 +3,13 @@ Learn more about me
 
 Hello, my name is Halimah and my pronouns are they/them.
 
+In the past five years, I have worked in children's publishing as an editor. Some of the books I've worked on include: Where's Spot? and Shadow and Bone TV tie-ins. I'm now looking to move across from publishing into tech (and who knows, maybe I'll even end up in publishing tech?!).
+
 I have spent the last five years working as an editor in children's publishing, where I have worked on countless books. And I am now looking to transition from publishing into tech. I believe my experience of project management and poring over language set me up for success in tech.
 
-As someone who grew up in the hey day of MSN (later Windows Live Messenger) I wanted my first website to harken back to that time as it was key to my experience of the internet as a child. I used to rush home after school to login to MSN and chat to my school friends and play all sorts of games with them. These form some of my fondest memories of using the internet pre-social media when we didn't have 24/7 access to other humans and because of my nostalgia, I thought it would be a great first project.
+As someone who grew up in the hey day of MSN (later Windows Live Messenger) I wanted my first website to harken back to that time as it was key to my experience of the internet as a child. I used to rush home after school to login to MSN and chat to my school friends and play games such as Minesweeper Flags and Brain Battle with them.
+
+MSN was host to some of my fondest memories of using the internet pre-social media. Because of my nostalgia, I thought it would be a great first project to demonstrate a bit about where I've come from and who I am!
 
 I hope you enjoy my homage to those early days as part of my application to Founders and Coders.
 

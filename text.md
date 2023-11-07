@@ -22,7 +22,7 @@ Why are you interested in coding?
 
 Halimah says:
 
-As I touch on above, I remember being on the internet from the age of 4, using the likes of MSN, playing games on Miniclip and other now defunct websites. As part of that, I have always been interested in how websites work and perhaps my earliest introduction to this was learning how to build websites using Freewebs (RIP) to create a Lord of the Rings fansite at the age of 8. However, despite this longstanding interest, apart from dabbling in the HTML and CSS of Tumblr and Wordpress themes, my previous attempts to teach myself how to code lacked focus and so fell to the wayside. Through FAC, I have discovered a renewed interest and the prerequisites have helped me focus my learning to establish the foundations that I hope will lead to a long career in software development.
+As I touch on above, I remember being on the internet from the age of 4, using the likes of MSN, playing games on Miniclip and other now defunct websites. As part of that, I have always been interested in how websites work and perhaps my earliest introduction to this was learning how to build websites using Freewebs (RIP) to create a Lord of the Rings fansite at the age of 8. However, despite this longstanding interest, apart from dabbling in the HTML and CSS of Tumblr and Wordpress themes, my previous attempts to teach myself how to code lacked focus and so didn't last long. Through FAC, I have discovered a renewed interest and the prerequisites have helped me focus my learning to establish the foundations that I hope will lead to a long career in software development.
 
 Halimah says:
 
@@ -30,11 +30,7 @@ Beyond my general fascination with how websites work, I have always enjoyed puzz
 
 Halimah says:
 
-Coming from a creative industry like publishing, where salary and job progression are opaque and there is no clear way to learn except sporadically, I am also interested in tech due to what appears to be clearly set out, transparent career progression and opportunities. There are countless tutorials to learn bits of code and I can't say the same for learning to be an editor, which inevitably only benefits the privileged. After five years of being an editor and barely progressing, I feel I have done my time and I would like to explore other career paths where I can feel motivated and rewarded for the effort I put in.
-
-Halimah says:
-
-Finally, as I've been working from FAC's requirements, I have found myself feeling really excited about the endless possibilities for what I can learn and apply to improve my website. Even in making this website, I've had countless ideas - some of which I probably won't be able to implement due to current lack of knowledge or time - and I can't wait to come back to this website in a year or so and see all the ways I can improve this further. I really enjoy learning and applying and coming back to this has been hugely motivational at a time where I have felt quite dejected in my current career path due to lack of opportunity.
+Finally, as I've been working from FAC's requirements, I have found myself feeling really excited about the endless possibilities for what I can learn and apply to improve my website. Even in making this website, I've had countless ideas - some of which I probably won't be able to implement due to current lack of knowledge or time - and I can't wait to come back to this website in a year or so and see all the ways I can improve this further. I really enjoy learning and applying and coming back to this has been hugely motivational and exciting for me to work on.
 
 #My projects
 Projects I've worked on as I've learned

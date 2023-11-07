@@ -16,6 +16,7 @@ body {
     font-family: Tahoma, 'Segoe UI', Verdana, sans-serif;
     font-size: 16px;
     background-color: hsl(270, 100%, 80%);
+    min-height: 100vh;
 }
 
 ul {
@@ -98,7 +99,7 @@ hr {
     height: 390px;
     font-size: 0.9rem;
     float: left;
-    z-index: -1;
+    z-index: 1;
 }
 
 .profile, .container {
@@ -215,6 +216,7 @@ ul .icon {
     .sidebar {
         float: none;
         position: fixed;
+        z-index: -1;
     }
 }
 
@@ -231,11 +233,11 @@ ul .icon {
 footer {
     text-align: center;
     font-size: 0.8rem;
-    width: 200%;
+    width: 150%;
     height: 100px;
     background-color: rgb(127, 0, 255);
     color: hsl(270, 100%, 80%);
     padding-top: 25px;
-    margin: 100vh auto;
-    position: absolute;
+    bottom: 0;
+    margin-top: 20px;
 }

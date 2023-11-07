@@ -210,6 +210,10 @@ ul .icon {
     line-height: 1.3rem;
 }
 
+#game > .conv {
+    height: 480px;
+}
+
 /* Responsive media queries */
 
 @media screen and (max-width: 700px) {
@@ -233,7 +237,7 @@ ul .icon {
 footer {
     text-align: center;
     font-size: 0.8rem;
-    width: 150%;
+    width: 100%;
     height: 100px;
     background-color: rgb(127, 0, 255);
     color: hsl(270, 100%, 80%);

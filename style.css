@@ -241,7 +241,7 @@ ul .icon {
 
 /* Footer */
 
-footer {
+body>footer {
     text-align: center;
     font-size: 0.8rem;
     width: 100%;

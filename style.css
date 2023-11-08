@@ -244,7 +244,7 @@ ul .icon {
 footer {
     text-align: center;
     font-size: 0.8rem;
-    width: 990px;
+    width: 100%;
     height: 100px;
     background-color: rgb(127, 0, 255);
     color: hsl(270, 100%, 80%);

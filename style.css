@@ -29,6 +29,16 @@ ul a {
     color: black;
 }
 
+.box-col-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-col-two {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Window container styling */
 
 .window {
@@ -227,7 +237,7 @@ ul .icon {
     .sidebar {
         float: none;
         position: fixed;
-        z-index: -1;
+        z-index: 0;
     }
 }
 

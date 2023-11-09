@@ -29,8 +29,11 @@ ul a {
     color: black;
 }
 
+/* Flexbox containers */
+
 .box-cols {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
 }
 
 .box-col-one {
@@ -41,13 +44,16 @@ ul a {
 .box-col-two {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 /* Window container styling */
 
 .window {
-    width: 550px;
-    height: 590px;
+    width: 90%;
+    height: 85%;
+    max-width: 550px;
+    max-height: 590px;
     background: rgb(127, 0, 255);
     border-radius: 2%;
     padding: 5px;
@@ -113,13 +119,14 @@ hr {
 
 .sidebar {
     margin-top: 171px;
-    margin-left: 50px;
-    width: 300px;
+    margin-left: 5%;
+    min-width: 299px;
+    max-width: 300px;
     height: 390px;
     font-size: 0.9rem;
-    /* float: left;
+    float: left;
     position: fixed;
-    z-index: 1; */
+    z-index: 1;
 }
 
 .profile, .container {
@@ -170,31 +177,37 @@ ul .icon {
 /* Chat Window customisation */
 
 .chat {
-    margin-left: 390px;
+    margin-left: 25px;
     margin-top: 20px;
     margin-right: 10px;
+    max-width: 450px;
 }
 
 .conv {
     background-color: hsl(270, 100%, 80%);
     margin: 5px auto 15px auto;
     padding: 5px;
-    height: 360px;
-    width: 515px;
-    color: black;
     overflow: auto;
+    width: 97%;
+    height: 40vh;
+    max-height: 360px;
+    max-width: 440px;
+    color: black;
+    
 }
 
 .text-box {
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 15px auto;
-    height: 132px;
-    width: 525px;
+    height: 12.5vh;
+    width: 100%;
+    max-height: 132px;
+    max-width: 450px;
 }
 
 .box {
-    width: 100%;
+    width: 97%;
     height: 100%;
     background-color: hsl(270, 100%, 80%);
 }
@@ -237,30 +250,47 @@ ul .icon {
 
 /* Responsive media queries */
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-        /* float: none;
-        position: fixed;
-        z-index: 0; */
-    }
-
+@media screen and (max-width: 900px) {
     .box-cols {
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .window {
+        margin: 2% auto;
+        width: 67.5%;
+        min-width: 300px;
+    }
+
+    .chat {
+        max-width: 500px;
+        min-width: 350px;
+    }
+
+    .conv, .text-box {
+        max-width: 500px;
+    }
+
+    .sidebar {
+        float: none;
+        position: relative;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
     .sidebar {
         margin: 5% 5%;
         /* width: 90vw; */
     }
+
+
 }
 
 
 /* Footer */
 
-body>footer {
+footer {
     text-align: center;
     font-size: 0.8rem;
     width: 100%;

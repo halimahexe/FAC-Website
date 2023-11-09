@@ -212,6 +212,9 @@ ul .icon {
     width: 97%;
     height: 100%;
     background-color: hsl(270, 100%, 80%);
+    font-size: 0.9rem;
+    padding: 5px;
+    font-family: inherit;
 }
 
 .send {
@@ -227,12 +230,6 @@ ul .icon {
     color: white;
 }
 
-.box > p {
-    font-size: 0.9rem;
-    padding: 5px;
-    font-style: italic;
-}
-
 .speaker {
     line-height: 2.5rem;
     color: rgb(127, 0, 255);
@@ -245,6 +242,8 @@ ul .icon {
     margin-right: 0.4rem;
     line-height: 1.3rem;
 }
+
+/* Game window code */
 
 #game > .conv {
     height: 480px;
@@ -273,7 +272,7 @@ ul .icon {
 
     .chat {
         max-width: 500px;
-        min-width: 350px;
+        min-width: 300px;
     }
 
     .conv, .text-box {
@@ -291,8 +290,6 @@ ul .icon {
         margin: 5% 5%;
         /* width: 90vw; */
     }
-
-
 }
 
 

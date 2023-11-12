@@ -1,14 +1,15 @@
-let minBtn = document.getElementByID('min-1');
+let minBtn = document.getElementById('#min-1');
 
-let content = document.getElementByClassName('non-menu-1');
+let content = document.getElementsByClassName('.non-menu-1');
 
 function minimise() {
+    console.log('minimise');
     content.classList.add('hidden');
 }
 
 minBtn.addEventListener('click', minimise);
 
-let maxBtn = document.getElementByID('max-1');
+let maxBtn = document.getElementById('#max-1');
 
 function maximise() {
     if (content.classList.contains('hidden')) {

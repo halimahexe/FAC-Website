@@ -1,4 +1,6 @@
-const text = document.getElementById('#project-text');
+console.log('hello world!')
 
-console.log(text);
+// const text = document.getElementById('#project-text');
+
+// console.log(text);
 

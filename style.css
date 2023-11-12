@@ -128,7 +128,7 @@ hr {
     font-size: 0.9rem;
     float: left;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
 }
 
 .profile, .container {
@@ -247,6 +247,12 @@ ul .icon {
 
 #game > .conv {
     height: 480px;
+}
+
+/* CSS for JavaScript buttons */
+
+.hidden {
+    display: none;
 }
 
 /* Responsive media queries */

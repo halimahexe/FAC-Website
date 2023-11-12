@@ -1,6 +1,19 @@
-console.log('hello world!')
+let minBtn = document.getElementsByID('min-1');
 
-// const text = document.getElementById('#project-text');
+let content = document.getElementsByClassName('non-menu-1');
 
-// console.log(text);
+function minimise() {
+    content.classList.add('hidden');
+}
 
+minBtn.addEventListener('click', minimise);
+
+let maxBtn = document.getElementsByID('max-1');
+
+function maximise() {
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden')
+    }
+}
+
+maxBtn.addEventListener('click', maximise);

@@ -251,8 +251,8 @@ ul .icon {
 
 /* CSS for JavaScript buttons */
 
-.hidden {
-    display: none;
+.window .hidden {
+        display: none;
 }
 
 /* Responsive media queries */

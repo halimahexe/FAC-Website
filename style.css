@@ -253,10 +253,13 @@ ul .icon {
 
 .hidden {
     display: none;
+    min-height: 0px;
+    height: 0px;
 }
 
 .only-mb {
-    height: 0px;
+    min-height: 0px;
+    height: 7.5%;
 }
 
 /* Responsive media queries */

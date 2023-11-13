@@ -1,40 +1,40 @@
-const minBtns = document.querySelectorAll('.minimise');
+let minBtns = document.querySelectorAll('.minimise');
 
-minBtns.forEach(minimise(minBtn)) {
-    minBtn.addEventListener('click', minimise() {
+minBtns.forEach(minimise(minBtn), {
+    minBtn.addEventListener('click', minimise(){
         minBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.add('hidden');
+        minBtn.parentElement.parentElement.parentElement.classList.add('only-mb');
     })
-}
+})
 
-const maxBtns = document.querySelectorAll('.maximise');
+let maxBtns = document.querySelectorAll('.maximise');
 
-maxBtns.forEach(maximise(maxBtn)) {
-    maxBtn.addEventListener('click', maximise() {
-        let nonMenu = maxBtn.parentElement.parentElement.nextElementSibling.nextElementSibling;
-        if (nonMenu.classList.contains('hidden')) {
-            nonMenu.classList.remove('hidden');
-        }
+maxBtns.forEach(maximise(maxBtn), {
+    maxBtn.addEventListener('click', maximise(){
+        maxBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.remove('hidden');
+        maxBtn.parentElement.parentElement.parentElement.classList.remove('only-mb');
     })
-}
+})
 
-const closeBtns = document.querySelectorAll('.close');
+let closeBtns = document.querySelectorAll('.close');
 
-closeBtns.forEach(close(closeBtn)) {
-    closeBtn.addEventListener('click',close() {
-        let box = closeBtn.parentElement.parentElement.parentElement;
-        box.remove();
+closeBtns.forEach(close(closeBtn), {
+    closeBtn.addEventListener('click', close() {
+        closeBtn.parentElement.parentElement.parentElement.remove();
     })
-}
+})
 
-// minimise function
+// // minimise function
 
 // let minBtn = document.getElementById('min-1');
 
-// let content = document.querySelector('.non-menu-1');
+// let content = document.querySelector('.non-menu');
+
+// let divWindow = document.querySelector('.window');
 
 // function minimise() {
 //     content.classList.add('hidden');
-
+//     divWindow.classList.add('only-mb');
 // }
 
 // minBtn.addEventListener('click', minimise);
@@ -45,7 +45,8 @@ closeBtns.forEach(close(closeBtn)) {
 
 // function maximise() {
 //     if (content.classList.contains('hidden')) {
-//         content.classList.remove('hidden')
+//         content.classList.remove('hidden');
+//         divWindow.classList.remove('only-mb');
 //     }
 // }
 

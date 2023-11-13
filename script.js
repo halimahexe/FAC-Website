@@ -1,28 +1,38 @@
 let minBtns = document.querySelectorAll('.minimise');
 
-minBtns.forEach(minimise(minBtn), {
-    minBtn.addEventListener('click', minimise(){
-        minBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.add('hidden');
-        minBtn.parentElement.parentElement.parentElement.classList.add('only-mb');
+minBtns.forEach(function(event) {
+    minBtns.addEventListener('click', function(){
+        let id = event.target.id;
+        'non-menu-${id}'.classList.add('hidden');
     })
 })
 
-let maxBtns = document.querySelectorAll('.maximise');
 
-maxBtns.forEach(maximise(maxBtn), {
-    maxBtn.addEventListener('click', maximise(){
-        maxBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.remove('hidden');
-        maxBtn.parentElement.parentElement.parentElement.classList.remove('only-mb');
-    })
-})
+// let minBtns = document.querySelectorAll('.minimise');
 
-let closeBtns = document.querySelectorAll('.close');
+// minBtns.forEach(function(minBtn) {
+//     minBtn.addEventListener('click', function(){
+//         minBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.add('hidden');
+//         minBtn.parentElement.parentElement.parentElement.classList.add('only-mb');
+//     })
+// })
 
-closeBtns.forEach(close(closeBtn), {
-    closeBtn.addEventListener('click', close() {
-        closeBtn.parentElement.parentElement.parentElement.remove();
-    })
-})
+// let maxBtns = document.querySelectorAll('.maximise');
+
+// maxBtns.forEach(function(maxBtn) {
+//     maxBtn.addEventListener('click', function(){
+//         maxBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.remove('hidden');
+//         maxBtn.parentElement.parentElement.parentElement.classList.remove('only-mb');
+//     })
+// })
+
+// let closeBtns = document.querySelectorAll('.close');
+
+// closeBtns.forEach(function(closeBtn) {
+//     closeBtn.addEventListener('click', function() {
+//         closeBtn.parentElement.parentElement.parentElement.remove();
+//     })
+// })
 
 // // minimise function
 

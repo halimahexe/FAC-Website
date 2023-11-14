@@ -98,12 +98,13 @@ ul a {
 
 .mb {
     margin: 0 -2px;
-    height: 20px;
+    height: 15px;
     aspect-ratio: 1;
 }
 
 button {
     height: 20px;
+    aspect-ratio: 1;
     background-color: inherit;
     border-radius: 2%;
 }

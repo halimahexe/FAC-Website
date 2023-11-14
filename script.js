@@ -1,9 +1,9 @@
 let minBtns = document.querySelectorAll('.minimise');
 
-minBtns.forEach(function(event) {
-    minBtns.addEventListener('click', function(){
-        let id = event.target.id;
-        'non-menu-${id}'.classList.add('hidden');
+minBtns.forEach(function() {
+    minBtn.addEventListener('click', function(event) {
+        console.log(event.target.id);
+        // 'non-menu-{$id}'.classList.add('hidden');
     })
 })
 

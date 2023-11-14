@@ -1,75 +1,77 @@
-let minBtns = document.querySelectorAll('.minimise');
-
-minBtns.forEach(function(minBtn) {
-    minBtn.addEventListener('click', function(event) {
-        console.log(event.target.id);
-        'non-menu-{$id}'.classList.add('hidden');
-    })
-})
-
-
 // let minBtns = document.querySelectorAll('.minimise');
 
 // minBtns.forEach(function(minBtn) {
-//     minBtn.addEventListener('click', function(){
-//         minBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.add('hidden');
-//         minBtn.parentElement.parentElement.parentElement.classList.add('only-mb');
+//     minBtn.addEventListener('click', function(event) {
+//         console.log(event.target.id);
+//         let id = event.target.id.match(/\d/)[0];
+//         let nonMenu = `document.querySelector('.non-menu')-${id}`;
+//         nonMenu.classList.add('hidden');
 //     })
 // })
 
-// let maxBtns = document.querySelectorAll('.maximise');
 
-// maxBtns.forEach(function(maxBtn) {
-//     maxBtn.addEventListener('click', function(){
-//         maxBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.remove('hidden');
-//         maxBtn.parentElement.parentElement.parentElement.classList.remove('only-mb');
-//     })
-// })
+let minBtns = document.querySelectorAll('.minimise');
 
-// let closeBtns = document.querySelectorAll('.close');
+minBtns.forEach(function(minBtn) {
+    minBtn.addEventListener('click', function(){
+        minBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.add('hidden');
+        minBtn.parentElement.parentElement.parentElement.classList.add('only-mb');
+    })
+})
 
-// closeBtns.forEach(function(closeBtn) {
-//     closeBtn.addEventListener('click', function() {
-//         closeBtn.parentElement.parentElement.parentElement.remove();
-//     })
-// })
+let maxBtns = document.querySelectorAll('.maximise');
 
-// // minimise function
+maxBtns.forEach(function(maxBtn) {
+    maxBtn.addEventListener('click', function(){
+        maxBtn.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.remove('hidden');
+        maxBtn.parentElement.parentElement.parentElement.classList.remove('only-mb');
+    })
+})
 
-// let minBtn = document.getElementById('min-1');
+let closeBtns = document.querySelectorAll('.close');
 
-// let content = document.querySelector('.non-menu');
+closeBtns.forEach(function(closeBtn) {
+    closeBtn.addEventListener('click', function() {
+        closeBtn.parentElement.parentElement.parentElement.remove();
+    })
+})
 
-// let divWindow = document.querySelector('.window');
+// minimise function
 
-// function minimise() {
-//     content.classList.add('hidden');
-//     divWindow.classList.add('only-mb');
-// }
+let minBtn = document.getElementById('min-1');
 
-// minBtn.addEventListener('click', minimise);
+let content = document.querySelector('.non-menu');
 
-// // maximise function
+let divWindow = document.querySelector('.window');
 
-// let maxBtn = document.getElementById('max-1');
+function minimise() {
+    content.classList.add('hidden');
+    divWindow.classList.add('only-mb');
+}
 
-// function maximise() {
-//     if (content.classList.contains('hidden')) {
-//         content.classList.remove('hidden');
-//         divWindow.classList.remove('only-mb');
-//     }
-// }
+minBtn.addEventListener('click', minimise);
 
-// maxBtn.addEventListener('click', maximise);
+// maximise function
 
-// // close function
+let maxBtn = document.getElementById('max-1');
 
-// let closeBtn = document.getElementById('close-1');
+function maximise() {
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        divWindow.classList.remove('only-mb');
+    }
+}
 
-// let box = document.querySelector('.window');
+maxBtn.addEventListener('click', maximise);
 
-// function close() {
-//     box.remove();
-// }
+// close function
 
-// closeBtn.addEventListener('click', close);
+let closeBtn = document.getElementById('close-1');
+
+let box = document.querySelector('.window');
+
+function close() {
+    box.remove();
+}
+
+closeBtn.addEventListener('click', close);

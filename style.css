@@ -98,8 +98,9 @@ ul a {
 
 .mb {
     margin: 0 -2px;
-    height: 15px;
+    height: 20px;
     aspect-ratio: 1;
+    z-index: 1;
 }
 
 button {
@@ -107,6 +108,7 @@ button {
     width: 20px;
     background-color: inherit;
     border-radius: 2%;
+    z-index: 2;
 }
 
 button:hover {

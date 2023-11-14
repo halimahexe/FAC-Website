@@ -20,7 +20,7 @@
                         <h1 class="title">Halimah's FAC Application</h1>
                     </div>
                     <div class="menu-buttons">
-                        <button class="minimise"><img id="min-1" class="mb" src="icons\minimise.svg" alt="minimise"></button>
+                        <button id="min-1" class="minimise"><img class="mb" src="icons\minimise.svg" alt="minimise"></button>
                         <button id="max-1" class="maximise"><img class="mb" src="icons\maximise.svg" alt="maximise"></button>
                         <button id="close-1" class="close"><img class="mb" src="icons\close.svg" alt="close"></button>
                     </div>
@@ -96,11 +96,10 @@
                             and Coders.</p>
                     </div>
                     <div class="text-box">
-                        <div class="box">
-                            <p>Type your message here...</p>
-                        </div>
+                        <textarea class="box" id="about-text" placeholder="Type your message here..."></textarea>
+                        </textarea>
                         <div class="send">
-                            <button>Send</button>
+                            <button for="about-text" type="submit">Send</button>
                         </div>
                     </div>
                 </div>
@@ -149,11 +148,10 @@
                             in a year or so and see all the ways I can improve this further.</p>
                     </div>
                     <div class="text-box">
-                        <div class="box">
-                            <p>Type your message here...</p>
-                        </div>
+                        <textarea class="box" id="why-text" placeholder="Type your message here..."></textarea>
+                        </textarea>
                         <div class="send">
-                            <button>Send</button>
+                            <button for="why-text">Send</button>
                         </div>
                     </div>
                 </div>

@@ -3,8 +3,8 @@
 // minBtns.forEach(function(minBtn) {
 //     minBtn.addEventListener('click', function(event) {
 //         console.log(event.target.id);
-//         let id = event.target.id.match(/\d/)[0];
-//         let nonMenu = `document.querySelector('.non-menu')-${id}`;
+//         let id = event.target.id.match(/\d+/);
+//         let nonMenus = document.querySelectorAll('.non-menu');
 //         nonMenu.classList.add('hidden');
 //     })
 // })

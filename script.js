@@ -87,4 +87,4 @@ closeBtns.forEach(function(closeBtn) {
 // })
 
 // I want to take text entered in the textarea, press send and append that text to corresponding .conv.
-// It requires a function that 
+// It requires a function that

@@ -103,6 +103,13 @@ sendBtns.forEach(function(sendBtn) {
             newMessage.innerText = newText;
             convWin.appendChild(newMessage);
 
+
+            let date = new Date().toUTCString();
+            let status = document.createElement('p');
+            status.setAttribute('class', 'status');
+            status.innerHTML = `<span>Message sent ${date}</span><span>Halimah is not online right now.</span>`;
+            convWin.appendChild(status);
+
             convWin.scrollTop = convWin.scrollHeight;
             textBox.value = '';
         }

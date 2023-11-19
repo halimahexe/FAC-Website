@@ -34,7 +34,7 @@ a {
     color: rgb(127, 0, 255);
 }
 
-a:hover {
+a:hover, a:visited {
     color: #FFD449;
 }
 
@@ -123,7 +123,7 @@ button {
 }
 
 button:hover {
-    background-color: hsl(270, 100%, 65%);
+    background-color: #FFD449;
 }
 
 hr {
@@ -231,6 +231,10 @@ ul .icon {
     font-family: inherit;
 }
 
+input::placeholder {
+    color: #9677BB;
+}
+
 .send {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -255,6 +259,18 @@ ul .icon {
     margin-left: 0.4rem;
     margin-right: 0.4rem;
     line-height: 1.3rem;
+}
+
+.status {
+    font-style: italic;
+    margin-top: 0.45rem;
+    margin-left: 0.4rem;
+    color: #9677BB;
+}
+
+.status > span {
+    display: block;
+    margin: 0.45rem 0;
 }
 
 /* Game window code */
@@ -310,11 +326,8 @@ footer {
     }
     
     .only-mb {
-               min-height: 30px;
-
-
-
-                          }
+        min-height: 30px;
+     }
 }
 
 @media screen and (max-width: 900px) {
@@ -327,7 +340,7 @@ footer {
     .window {
         margin: 2% auto;
         width: 67.5%;
-        min-width: 330px;
+        min-width: 300px;
     }
 
     .chat {

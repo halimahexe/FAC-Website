@@ -77,14 +77,43 @@ closeBtns.forEach(function(closeBtn) {
 
 // Send Function
 
-// let sendBtns = document.querySelectorAll('button[type="submit"]')
-// console.log(sendBtns);
+let sendBtns = document.querySelectorAll('button[type="submit"]')
+let newTexts = document.querySelectorAll('[class^="text-"]');
 
-// let newTexts = document.querySelectorAll('.box');
+sendBtns.forEach(function(sendBtn) {
+    sendBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        let number = event.target.id.match(/\d/);
+        
+        let text = '#text-' + number;
+        let textBox = document.querySelector(text);
+        let newText = textBox.value;
+        
+        let conv ='#conv-' + number;
+        let convWin = document.querySelector(conv);
 
-// sendBtns.forEach(function(sendBtn) {
+        if (newText !== '') {
+            let speaker = document.createElement('p');
+            speaker.setAttribute('class','speaker');
+            speaker.innerText = 'You say:';
+            convWin.appendChild(speaker);
+            
+            let newMessage = document.createElement('p');
+            newMessage.setAttribute('class','message');
+            newMessage.innerText = newText;
+            convWin.appendChild(newMessage);
 
+            convWin.scrollTop = convWin.scrollHeight;
+            textBox.value = '';
+        }
+    })
+})
+
+// Add Enter act as click if I have time
+
+// textBox.addEventListener('keypress', function(event) {
+//     if (event.key === 'Enter') {
+//         event.preventDefault();
+
+//     }
 // })
-
-// I want to take text entered in the textarea, press send and append that text to corresponding .conv.
-// It requires a func

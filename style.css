@@ -281,6 +281,13 @@ footer {
     margin-top: 50px;
 }
 
+#footer-btn {
+    width: 110px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
 /* Responsive media queries */
 
 @media screen and (max-width: 1250px) {

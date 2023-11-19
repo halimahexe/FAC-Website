@@ -1,4 +1,4 @@
-// Menu bar functions
+// Menu bar variables
 
 let minBtns = document.querySelectorAll('.minimise');
 let maxBtns = document.querySelectorAll('.maximise');
@@ -107,6 +107,14 @@ sendBtns.forEach(function(sendBtn) {
             textBox.value = '';
         }
     })
+})
+
+// Back to Top button
+
+let topBtn = document.querySelector('#footer-btn');
+
+topBtn.addEventListener('click', function(){
+    document.documentElement.scrollTop = 0;
 })
 
 // Add Enter act as click if I have time

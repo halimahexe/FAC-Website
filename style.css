@@ -34,9 +34,13 @@ a {
     color: rgb(127, 0, 255);
 }
 
-a:hover, a:visited {
+a:hover {
     color: #FFD449;
 }
+
+/* a:visited {
+    color: #323031;
+} */
 
 /* Flexbox containers */
 

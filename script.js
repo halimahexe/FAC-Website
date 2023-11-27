@@ -13,18 +13,18 @@ minBtns.forEach(function(minBtn) {
     
     minBtn.addEventListener('click', function(event) {
         
-        let number = event.target.id.match(/\d/);
-        let nonMenu = '#non-menu-' + number;
-        let window = '#win-' + number;
+        let number = event.target.id.match(/\d/); // Using RegEx to find the target id number
+        let nonMenu = '#non-menu-' + number; // Assigning number to element with id #non-menu-number
+        let window = '#win-' + number; // Assigning number to element with id #win-number
 
-        nonMenus.forEach(function(i) {
-            if (i.matches(nonMenu)) {
+        nonMenus.forEach(function(i) { // This takes the array of non-menu elements and iterates through each of them to find a match to the non-menu element with the same number as the event.target
+            if (i.matches(nonMenu)) { // i is one element in the nonMenus array (named i to avoid confusion with the variable named nonMenu)
                 i.classList.add('hidden');
             }
         })
 
-        windows.forEach(function(i) {
-            if (i.matches(window)) {
+        windows.forEach(function(i) { // This takes the array of window elements and iterates through each of them to find a match to the window element with the same number as the event.target
+            if (i.matches(window)) { // i is one element in the windows array (named i to avoid confusion with the variable named window)
                 i.classList.add('only-mb');
             }
         })

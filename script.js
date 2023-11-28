@@ -4,7 +4,7 @@ const minBtns = document.querySelectorAll('.minimise');
 const maxBtns = document.querySelectorAll('.maximise');
 const closeBtns = document.querySelectorAll('.close');
 
-const nonMenus = document.querySelectorAll('[id*="non-menu"]');
+const contents = document.querySelectorAll('[id*="content"]');
 const windows = document.querySelectorAll('[id^="win-"]');
 
 // Minimise button
@@ -14,11 +14,11 @@ minBtns.forEach(function(minBtn) {
     minBtn.addEventListener('click', function(event) {
         
         let number = event.target.id.match(/\d/); // Using RegEx to find the target id number
-        let nonMenu = '#non-menu-' + number; // Assigning number to element with id #non-menu-number
+        let content = '#content-' + number; // Assigning number to element with id #content-number
         let window = '#win-' + number; // Assigning number to element with id #win-number
 
-        nonMenus.forEach(function(i) { // This takes the array of non-menu elements and iterates through each of them to find a match to the non-menu element with the same number as the event.target
-            if (i.matches(nonMenu)) { // i is one element in the nonMenus array (named i to avoid confusion with the variable named nonMenu)
+        contents.forEach(function(i) { // This takes the array of content elements and iterates through each of them to find a match to the content element with the same number as the event.target
+            if (i.matches(content)) { // i is one element in the contents array (named i to avoid confusion with the variable named content)
                 i.classList.add('hidden');
             }
         })
@@ -39,11 +39,11 @@ maxBtns.forEach(function(maxBtn) {
     maxBtn.addEventListener('click', function(event) {
         
         let number = event.target.id.match(/\d/);
-        let nonMenu = '#non-menu-' + number;
+        let content = '#content-' + number;
         let window = '#win-' + number;
 
-        nonMenus.forEach(function(i) {
-            if (i.matches(nonMenu)) {
+        contents.forEach(function(i) {
+            if (i.matches(content)) {
                 i.classList.remove('hidden');
             }
         })

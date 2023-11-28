@@ -27,7 +27,6 @@ ul {
 
 ul a {
     text-decoration: none;
-    /* color: #323031; */
 }
 
 a {
@@ -38,9 +37,6 @@ a:hover {
     color: #FFD449;
 }
 
-/* a:visited {
-    color: #323031;
-} */
 
 /* Flexbox containers */
 
@@ -59,7 +55,6 @@ a:hover {
 .box-col-two {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 /* Window container styling */
@@ -364,10 +359,6 @@ footer {
     .only-mb {
         min-height: 30px;
         height: 7.5%;
-    }
-
-    footer {
-        /* margin-top: 50px; */
     }
 }
 

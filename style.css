@@ -229,7 +229,7 @@ ul .icon {
     font-family: inherit;
 }
 
-input::placeholder {
+textarea::placeholder {
     color: #9677BB;
 }
 

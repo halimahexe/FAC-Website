@@ -1,11 +1,11 @@
 // Menu bar variables
 
-let minBtns = document.querySelectorAll('.minimise');
-let maxBtns = document.querySelectorAll('.maximise');
-let closeBtns = document.querySelectorAll('.close');
+const minBtns = document.querySelectorAll('.minimise');
+const maxBtns = document.querySelectorAll('.maximise');
+const closeBtns = document.querySelectorAll('.close');
 
-let nonMenus = document.querySelectorAll('[id*="non-menu"]');
-let windows = document.querySelectorAll('[id^="win-"]');
+const nonMenus = document.querySelectorAll('[id*="non-menu"]');
+const windows = document.querySelectorAll('[id^="win-"]');
 
 // Minimise button
 

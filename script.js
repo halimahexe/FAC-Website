@@ -13,22 +13,12 @@ minBtns.forEach(function(minBtn) {
     
     minBtn.addEventListener('click', function(event) {
         
-        let number = event.target.id.match(/\d/); // Using RegEx to find the target id number
-        let content = '#content-' + number; // Assigning number to element with id #content-number
-        let window = '#win-' + number; // Assigning number to element with id #win-number
-
-        contents.forEach(function(i) { // This takes the array of content elements and iterates through each of them to find a match to the content element with the same number as the event.target
-            if (i.matches(content)) { // i is one element in the contents array (named i to avoid confusion with the variable named content)
-                i.classList.add('hidden');
-            }
-        })
-
-        windows.forEach(function(i) { // This takes the array of window elements and iterates through each of them to find a match to the window element with the same number as the event.target
-            if (i.matches(window)) { // i is one element in the windows array (named i to avoid confusion with the variable named window)
-                i.classList.add('only-mb');
-            }
-        })
-
+        const number = event.target.id.match(/\d/); // Using RegEx to find the target id number
+        const content = document.querySelector(`#content-${number}`); // Finding element with id #content-number
+        const window = document.querySelector(`#win-${number}`); // Finding element with id #win-number
+        
+        content.classList.add('hidden'); // Hiding the content
+        window.classList.add('only-mb'); // Setting this so only the menu bar shows up
     })
 })
 
@@ -38,21 +28,12 @@ maxBtns.forEach(function(maxBtn) {
     
     maxBtn.addEventListener('click', function(event) {
         
-        let number = event.target.id.match(/\d/);
-        let content = '#content-' + number;
-        let window = '#win-' + number;
+        const number = event.target.id.match(/\d/);
+        const content = document.querySelector(`#content-${number}`);
+        const window = document.querySelector(`#win-${number}`);
 
-        contents.forEach(function(i) {
-            if (i.matches(content)) {
-                i.classList.remove('hidden');
-            }
-        })
-
-        windows.forEach(function(i) {
-            if (i.matches(window)) {
-                i.classList.remove('only-mb');
-            }
-        })
+        content.classList.remove('hidden');
+        window.classList.remove('only-mb');
 
     })
 })
@@ -63,36 +44,30 @@ closeBtns.forEach(function(closeBtn) {
     
     closeBtn.addEventListener('click', function(event) {
         
-        let number = event.target.id.match(/\d/);
-        let window = '#win-' + number;
+        const number = event.target.id.match(/\d/);
+        const window = document.querySelector(`#win-${number}`);
 
-        windows.forEach(function(i) {
-            if (i.matches(window)) {
-                i.remove();
-            }
-        })
+        window.remove();
 
     })
 })
 
 // Send Function
 
-let sendBtns = document.querySelectorAll('button[type="submit"]')
-let newTexts = document.querySelectorAll('[class^="text-"]');
+const sendBtns = document.querySelectorAll('button[type="submit"]')
+const newTexts = document.querySelectorAll('[class^="text-"]');
 
 sendBtns.forEach(function(sendBtn) {
     sendBtn.addEventListener('click', function(event) {
         event.preventDefault();
-        let number = event.target.id.match(/\d/);
+        const number = event.target.id.match(/\d/);
         
-        let text = '#text-' + number;
-        let textBox = document.querySelector(text);
-        let newText = textBox.value;
+        const textBox = document.querySelector(`#text-${number}`);
+        const newText = textBox.value;
         
-        let conv ='#conv-' + number;
-        let convWin = document.querySelector(conv);
+        const convWin = document.querySelector(`#conv-${number}`);
 
-        if (newText !== '') {
+        if (newText !== '') { // If the text box isn't empty, this will run
             let speaker = document.createElement('p');
             speaker.setAttribute('class','speaker');
             speaker.innerText = 'You say:';
@@ -103,22 +78,21 @@ sendBtns.forEach(function(sendBtn) {
             newMessage.innerText = newText;
             convWin.appendChild(newMessage);
 
-
-            let date = new Date().toUTCString();
+            let date = new Date().toUTCString(); // UTC string dictates what format the Date will present itself in
             let status = document.createElement('p');
             status.setAttribute('class', 'status');
             status.innerHTML = `<span>Message sent ${date}</span><span>Halimah is not online right now.</span>`;
             convWin.appendChild(status);
 
             convWin.scrollTop = convWin.scrollHeight;
-            textBox.value = '';
+            textBox.value = ''; // Deletes previous content of the text box so new message can be entered
         }
     })
 })
 
 // Back to Top button
 
-let topBtn = document.querySelector('#footer-btn');
+const topBtn = document.querySelector('#footer-btn');
 
 topBtn.addEventListener('click', function(){
     document.documentElement.scrollTop = 0;
